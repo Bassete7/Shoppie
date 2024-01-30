@@ -1,0 +1,123 @@
+.hero-section{
+    background-color: $bg-wild-blue-yonder;
+    padding-top: 15rem;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    &-col-1{
+        .price,
+        .hero-section-header{
+            font-family: 'Poppins', sans-serif;
+        }
+        .price{
+            font-size: 3.4rem;
+            font-weight: 500;
+        }
+        .hero-section-header{
+            font-size: 4.4rem;
+            line-height: 110%;
+            margin-block: 1rem 4rem;
+        }
+        .hero-section-content{
+            font-size: 1.8rem;
+            line-height: 2;
+        }
+        .shop{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-block: 1.5rem;
+            margin-top: 2rem;
+
+            ion-icon{
+                font-size: 2rem;
+                rotate: 45deg;
+            }
+        }
+    }
+
+    &-col-2{
+        .w-100{
+            max-width: 575px;
+            margin-inline: auto;
+            position: relative;
+            z-index: 10;
+        }
+        .shape-1,
+        .shape-2{
+            display: none;
+        }
+    }
+}
+
+
+
+@media all and (min-width: 770px) {
+    .hero-section{
+        padding-top: 20rem;
+
+        &-col-1{
+            .price{
+                font-size: 4.2rem;
+                font-weight: 500;
+            }
+            .hero-section-header{
+                font-size: 7.8rem;
+                line-height: 1.3;
+            }
+            .hero-section-content{
+                font-size: 2.5rem;
+                line-height: 1.7;
+            }
+            .shop{
+                padding: 2rem 5rem;
+                margin-top: 5rem;
+            }
+        }
+
+        &-col-2{
+            .w-100{
+                max-width: 770px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .hero-section{
+        padding-top: 15rem;
+        height: 100svh;
+
+        .container{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-col-1{
+            .hero-section-content{
+                max-width: 50ch;
+            }
+        }
+
+        &-col-2{
+            position: relative;
+            .shape-1,
+            .shape-2{
+                display: unset;
+                position: absolute;
+            }
+            .shape-1{
+                top: 0;
+                left: 0;
+                translate: -11rem -11rem;
+            }
+            .shape-2{
+                left: -20rem;
+            }
+        }
+    }
+}

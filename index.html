@@ -10,6 +10,11 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header container">
@@ -27,17 +32,50 @@
                 <a href="#portfolio">PORTFOLIO</a>
                 <a href="#blog">BLOG</a>
                 <a href="#shop">SHOP</a>
-                <a href="#cart"><ion-icon name="bag"></ion-icon>CART(02)</a>
+                <button class="go-to-cart">
+                    <ion-icon name="bag"></ion-icon>CART(02)
+                </button>
+                <button class="contact-us has-style btn-white">
+                    CONTACT US
+                </button>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="container">
-            <section class="section hero-section">
+        <section class="section hero-section">
+            <div class="container">
+                <div class="hero-section-col-1">
+                    <p class="price">&dollar;120.00</p>
+                    <h1 class="hero-section-header">
+                        Man summer <br> collection
+                    </h1>
+                    <p class="hero-section-content">
+                        This is the factor that sets us apart from competition and allows us deliver a specialist business service team applies its ranging experience determining
+                    </p>
+                    <button class="shop has-style btn-white">
+                        SHOP NOW
+                        <ion-icon name="arrow-up"></ion-icon>
+                    </button>
+                </div>
+                <div class="hero-section-col-2">
+                    <img src="./assets/images/hero-banner.png" class="w-100" alt="hero banner">
+                    <img src="./assets/images/hero-shape-1.png" class="shape-1" alt="hero shape 1">
+                    <img src="./assets/images/hero-shape-2.png" class="shape-2" alt="hero shape 2">
+                </div>
+            </div>
+        </section>
 
-            </section>
-        </div>
+        <section class="section new-arrivals">
+            <div class="container">
+                <h2 class="section-sub-header">
+                    Explore new arrivals
+                </h2>
+                <div class="section-content">
+                    
+                </div>
+            </div>
+        </section>
     </main>
 
 

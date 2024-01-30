@@ -1,5 +1,8 @@
 .header{
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,12 +33,14 @@
             font-size: 1.6rem;
             font-weight: $weight-semiBold;
             padding-block: 1rem;
-
-            &:last-child{
-                display: flex;
-                gap: 1rem;
-                padding-block: 2.5rem;
-            }
+        }
+        .go-to-cart{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-block: 2.5rem;
+            font-size: 1.6rem;
+            font-weight: $weight-semiBold;
         }
     }
 
@@ -48,9 +53,66 @@
             max-height: 23rem;
         }
     }
+
+    .contact-us{
+        display: none;
+    }
 }
 
 
 @media all and (min-width: 993px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.6rem;
+        height: 8rem;
+        border-bottom: 2px solid $border-eerie-black;
+    
+        .navbar{
+            position: unset;
+            height: 100%;
+            max-height: unset;
+            width: auto;
+            background-color: transparent;
+        }
+    
+        .nav-container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+    
+            a{
+                font-size: 1.6rem;
+                font-weight: $weight-semiBold;
+                padding: 0 2rem;
+            }
+            .go-to-cart{
+                display: flex;
+                gap: 1rem;
+                padding: 0 2rem 0 4rem;
+                margin-left: 2rem;
+                border-left: 2px solid $border-eerie-black;
+                height: 100%;
+            }
+        }
+    
+        .btn-toggle{
+            display: none;
+        }
+    }
+}
 
+
+@media all and (min-width: 1200px) {
+    .header{
+        .navbar{
+            .contact-us{
+                display: block;
+                margin-right: 1rem;
+            }
+        }
+    }
 }
