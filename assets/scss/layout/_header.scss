@@ -1,0 +1,56 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 1.6rem;
+
+    .logo{
+        font-family: $fontFamily-clashDisplay;
+    }
+
+    .navbar{
+        position: absolute;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        height: auto;
+        max-height: 0;
+        background-color: $bg-white;
+        transition: max-height 1s;
+        overflow: hidden;
+    }
+
+    .nav-container{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.6rem 0;
+
+        a{
+            font-size: 1.6rem;
+            font-weight: $weight-semiBold;
+            padding-block: 1rem;
+
+            &:last-child{
+                display: flex;
+                gap: 1rem;
+                padding-block: 2.5rem;
+            }
+        }
+    }
+
+    .btn-toggle{
+        ion-icon{
+            font-size: 3rem;
+        }
+
+        &.active + .navbar{
+            max-height: 23rem;
+        }
+    }
+}
+
+
+@media all and (min-width: 993px) {
+
+}

@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(../../fonts/ClashDisplay-Semibold.woff2);
+}
+/**
+ * TYPOGRAPHY
+ */
+/* font family */
+/* font size */
+/* font weight */
+/**
+ * COLORS
+ */
+/* backgorund color */
+/* text color */
+/* border color */
+/**
+ * BOX SHADOW
+ */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+span,
+ion-icon,
+button,
+img {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+@media all and (min-width: 575px) {
+  .container {
+    max-width: 575px;
+  }
+}
+@media all and (min-width: 770px) {
+  .container {
+    max-width: 770px;
+  }
+}
+@media all and (min-width: 993px) {
+  .container {
+    max-width: 993px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.6rem;
+}
+.header .logo {
+  font-family: "ClashDisplay", cursive;
+}
+.header .navbar {
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  width: 100%;
+  height: auto;
+  max-height: 0;
+  background-color: hsl(0, 0%, 100%);
+  transition: max-height 1s;
+  overflow: hidden;
+}
+.header .nav-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.6rem 0;
+}
+.header .nav-container a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-block: 1rem;
+}
+.header .nav-container a:last-child {
+  display: flex;
+  gap: 1rem;
+  padding-block: 2.5rem;
+}
+.header .btn-toggle ion-icon {
+  font-size: 3rem;
+}
+.header .btn-toggle.active + .navbar {
+  max-height: 23rem;
+}
+
+/*# sourceMappingURL=style.css.map */
